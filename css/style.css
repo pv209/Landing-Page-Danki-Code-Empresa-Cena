@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,700&display=swap');
+
+
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -23,8 +27,8 @@ html,body{
 /******/
 
 header{
-	background-color: #D6D6D6;
-	padding:10px 2% 30px 2%;
+	background-color:rgb(180, 180, 180);
+	padding:10px 2% 40px 2%;
 }
 
 .logo-1{
@@ -65,17 +69,19 @@ header{
 	width: 400px;
 	height: 110%;
 	top: -5%;
+	z-index: 2;
 	position: relative;
 	background-color: white;
+	box-shadow: 1px 1px 2px 1px rgb(180, 180, 180);
 }
 
 .form-container h2{
-	padding: 30px 15px;
+	padding: 30px 25px;
 	color: black;
 	font-size: 18px;
 	font-weight: normal;
 
-	background-color: rgb(234, 236,239)
+	background-color: rgb(210,210,210)
 }
 
 .form-container form{
@@ -88,7 +94,7 @@ header{
 	border: 1px solid #ccc;
 	height: 45px;
 	line-height: 45px;
-	padding-left: 20px;
+	padding-left: 10px;
 }
 
 .form-container form input[type=submit] {
@@ -97,7 +103,7 @@ header{
 	color: white;
 	width: 100%;
 	font-size: 25px;
-	height: 30px;
+	height:	50px;
 	cursor: pointer;
 	border: 0;
 
@@ -116,6 +122,27 @@ header{
 	margin-top: 20px;
 }
 
+.chamada{
+	text-align: center;
+	width: 100%;
+	position: relative;
+	top: -70px;
+	z-index: 1;
+	display: inline-block;
+}
+
+section.chamada .container{
+	background-color: gray;
+	padding: 50px 0;
+}
+.chamada h2{
+	width: 96%;
+	max-width: 700px;
+	display: inline-block;
+	color: white;
+	font-size: 24px;
+	font-weight: normal;
+}
 @media screen and (max-width: 510px){
 
 	header{
